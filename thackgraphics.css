@@ -17,6 +17,7 @@ body {      /* The Defaults */
     font-size: 16px;
     font-weight: 300;
     margin: 0;
+    background-color: #FFE874;
 }
 
 /* -------- Header -------- */
@@ -100,6 +101,14 @@ header p {
 
 
 /* -------- Main -------- */
+
+div#mainbody {
+    background-color: white;
+    padding: 4rem;
+    margin: 0 10rem;
+    box-shadow: 1px 3px 3px black, 1px 3px 3px black;
+  }
+
 main {
     padding: 0.5rem 3%;
 }
