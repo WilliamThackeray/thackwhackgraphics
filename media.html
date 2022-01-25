@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- Language Attribute -->
+    <head>
+        <!-- Title of our page -->
+        <title>Thack Whack Graphics</title>  <!-- Page Title -->
+
+        <meta charset="UTF-8">  <!-- Character Set -->
+        <meta name="description" content="Graphics made for Content Creators">
+        <meta name="author" content="William Thackeray">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="thackgraphics.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        </head>
+
+    <body> 
+        <!-- The Page Header-->
+        <header>
+            <div class="header-div">
+                <img class="logo" src="images/thwklogo.png" alt="company logo" width="" height="">
+                <div>
+                    <h1> Thack </h1>
+                    <h1> Whack </h1> 
+                    <h1> Graphics </h1>
+                </div>
+            </div>
+            <p>For Content Creators, By Content Creators</p>
+        </header>
+
+        <!-- The Page Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></th>
+                <li><a href="shop.html">Shop</a></th>
+                <li><a href="about.html">About</a></th>
+                <li><a href="commissions.html">Commission Requests</a>
+                <li><a href="contact.html">Contact</a></th>
+                <li class="current"><a href="media.html">My Media</a></th>
+                <li><a href="inspiration.html">Inspiration</a></th>
+            </ul>
+        </nav>
+
+        <!-- The Main Page Content -->
+        <main>
+            <h1>My Media</h1>
+
+            <h2>My Animations on YouTube</h2>
+            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/bSRdvKaWBVc" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
+
+            <h2></h2>
+
+
+            <h2>My Twitch Channel</h2>
+            <p>This is where I do my own content creation, but if you catch me on a good day, I'll be creating
+                The products YOU ask for!</p>
+                <div class="twitch">
+                    <!-- Add a placeholder for the Twitch embed -->
+                    <div class="twitch_video">
+                        <iframe
+                            src="https://player.twitch.tv/?channel=Thack_Whack&parent=dgm2120.thackwhackgraphics.com"
+                            frameborder="0"
+                            scrolling="no"
+                            height="100%"
+                            width="100%"
+                            allowfullscreen="true">
+                        </iframe>
+                    </div>
+                    <div class="twitch_chat">
+                        <iframe 
+                            src="https://www.twitch.tv/embed/Thack_Whack/chat?parent=dgm2120.thackwhackgraphics.com"
+                            frameborder="0"
+                            scrolling="no"
+                            height="100%"
+                            width="100%">
+                        </iframe>
+                    </div>
+                </div>
+        </main>
+
+        <!-- The Page Footer-->
+        <footer>
+            <!-- Table for the footer area with all the different links -->
+            <table style="width:100%"> 
+                <tr style="background-color:#D8D8D7">
+                    <th>Information</th>
+                    <th>New Products</th>
+                </tr>
+                <tr style="text-align: center">
+                    <th>
+                        <ul>
+                            <li><a href="about.html#">About</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="revamps.html">Total Revamps</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index.html">Customer Servey</a></li> <!-- This will link to a google servey -->
+                        </ul>
+                    </th>
+                    <th>
+                        <table style="width:100%">
+                            <tr style="text-align: center">
+                                <td>Stay up to date!</td>           <!-- Column 2 -->
+                            </tr>
+                            <tr style="text-align: center">
+                                <!-- This form is for people to submit their emails for an email list -->
+                                <td><form action="email_list.txt" method="post" class="email_list">
+                                    <label for="eaddress">Email</label>
+                                    <input type="text" id="eaddress" name="eaddress"><br><br>
+                                    <button type="submit" value="Submit">Sign Me Up!</button>
+                                </form></td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                
+                <tr style="text-align: center">
+                    <td></td>    <!-- Column 1 -->
+                    <td></td>    <!-- Column 2 -->
+                </tr>
+            </table>
+
+            <p style="text-align: center">© 2021 • William Thackeray • <a href="mailto:will_thack@comcast.net">Email Me</a> </p>
+
+        </footer>
+
+    </body>
+
+</html>

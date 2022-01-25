@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">  <!-- Language Attribute -->
+    <head>
+        <!-- Title of our page -->
+        <title>Thack Whack Graphics</title>  <!-- Page Title -->
+
+        <meta charset="UTF-8">  <!-- Character Set -->
+        <meta name="description" content="Graphics made for Content Creators">
+        <meta name="author" content="William Thackeray">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="thackgraphics.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        </head>
+
+    <body> 
+        <!-- The Page Header-->
+        <header>
+            <div class="header-div">
+                <img class="logo" src="images/thwklogo.png" alt="company logo" width="" height="">
+                <div>
+                    <h1> Thack </h1>
+                    <h1> Whack </h1> 
+                    <h1> Graphics </h1>
+                </div>
+            </div>
+            <p>For Content Creators, By Content Creators</p>
+        </header>
+
+        <!-- The Page Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li><a href="shop.html">Shop</a>
+                <li><a href="about.html">About</a>
+                <li class="current"><a href="commissions.html">Commission Requests</a>
+                <li><a href="contact.html">Contact</a></th>
+                <li><a href="media.html">My Media</a>
+                <li><a href="inspiration.html">Inspiration</a>
+            </ul>
+        </nav>
+
+        <!-- The Main Page Content -->
+        <main>
+            <h1>Commission Form</h1>
+
+
+            <form method="get" class="commission_form" action="thankyou.html">
+
+            <fieldset>
+                <h2>Product Chart*</h2>
+                <h4>*All prices are subject to change on complexity</h4>
+                <table class="products">
+                    <tr>
+                        <th>Products</th><th>Base Price</th><th>1-2 Weeks</th><th>3-4 Weeks</th><th>5+ weeks</th>
+                    </tr>
+                    <tr>
+                        <td>Stinger</td><td>$15.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Layout</td><td>$15.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Logo</td><td>$10.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Animation</td><td>$15.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Overlay</td><td>$13.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Entire Channel Revamp</td><td>$60.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Intro</td><td>$15.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                    <tr>
+                        <td>Merchendise Design</td><td>$20.00</td><td>+ $30.00</td><td>+ $15.00</td><td>+ $0.00</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Mobile Number<input type="tel" name="phone" placeholder="000-123-4567"></label>
+                    <label>Email*<input type="email" name="email" required></label>
+                    <label>Other Reliable Forms of Contact (Discord, Skype, etc.)<input type="text" name="other"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Creator Platform</legend>
+                    <label><input type="checkbox" name="twitch" value="chosen">Twitch</label>
+                    <label><input type="checkbox" name="youtube" value="chosen">YouTube</label>
+                    <label><input type="checkbox" name="facebook" value="chosen">Facebook</label>
+                    <label><input type="checkbox" name="other" value="chosen">Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Commission Information</legend>
+                    <label>Select Commission Type*
+                        <select name="type">
+                            <option value="none">Please Select</option>
+                            <option value="stinger">Stinger</option>
+                            <option value="intro">Intro</option>
+                            <option value="layout">Layout</option>
+                            <option value="logo">Logo</option>
+                            <option value="animation">Animation</option>
+                            <option value="overlay">Overlay</option>
+                            <option value="revamp">Full Channel Revamp</option>
+                            <option value="merch">Merchendise</option>
+                            <option value="custom">Custom Graphic/Portrait</option>
+                        </select>
+                    </label>
+                    <label>Commission Time Frame</label>
+                        <label><input type="radio" name="timeframe" value="1-2">1-2 Weeks (+ $30)</label>
+                        <label><input type="radio" name="timeframe" value="3-4">3-4 Weeks (+ $15)</label>
+                        <label><input type="radio" name="timeframe" value="5-6">5-6 Weeks (+ $0)</label>
+                        <label><input type="radio" name="timeframe" value="custom">Custom</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Commission Description</legend>
+                <textarea name="description" placeholder="I am looking for a certain design..."></textarea>
+            </fieldset>
+            <input type="submit" value="Request Commission Project">
+            </form>
+        </main>
+
+        <!-- The Page Footer-->
+        <footer>
+            <!-- Table for the footer area with all the different links -->
+            <table> 
+                <tr>
+                    <th>Information</th>
+                    <th>New Products</th>
+                </tr>
+                <tr>
+                    <th>
+                        <ul>
+                            <li><a href="about.html#">About</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="commissions.html">Total Revamps</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index.html">Customer Servey</a></li> <!-- This will link to a google servey -->
+                        </ul>
+                    </th>
+                    <th>
+                        <table>
+                            <tr>
+                                <td>Stay up to date!</td>           <!-- Column 2 -->
+                            </tr>
+                            <tr>
+                                <!-- This form is for people to submit their emails for an email list -->
+                                <td>
+                                    <form action="email_list.txt" method="post" class="email_list">
+                                        <label for="eaddress">Email</label>
+                                        <input type="text" id="eaddress" name="eaddress"><br><br>
+                                        <button type="submit" value="Submit">Sign Me Up!</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                
+                <tr>
+                    <td></td>    <!-- Column 1 -->
+                    <td></td>    <!-- Column 2 -->
+                </tr>
+            </table>
+
+            <p>&copy; 2021 &bull; William Thackeray &bull; <a href="mailto:will_thack@comcast.net">Email Me</a> &bull; <a href="tel:8016414181">Call Me</a></p>
+
+        </footer>
+
+    </body>
+
+</html>

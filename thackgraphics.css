@@ -1,0 +1,383 @@
+m/* Colors */
+/* Dark Blue: #0F5599 */
+/* Yellow: #E6BE01 */
+/* Light Yellow : #FFE874 */
+/* Dark Purple: #620F99 */
+/* Dark Grey: #525252 */
+/* Light Grey: #D8D8D7 */
+
+* {box-sizing: border-box;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {      /* The Defaults */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* -------- Header -------- */
+header {
+    background-color: #FFE874;
+    background-image: linear-gradient(#FFE874, #c5b359);
+    padding: 0.5rem 3%;
+}
+header .header-div {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
+header .logo {
+    margin-right: 1rem;
+}
+header h1 {
+    color: #0F5599;
+    margin: 0;
+    font-size: 2.5rem;
+}
+header p {
+    color: #0F5599;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* -------- Nav -------- */
+
+/* For Small Screens */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 3%;
+    }
+    nav a {
+        display: block;
+        padding: 0.9rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: #0F5599;
+        border-bottom: solid 1px #525252;
+        text-align: center;
+    }
+
+    nav .current a {
+        background-color: #0F5599;
+        color: white;
+    }
+}
+
+/* For Large Screens */
+@media only screen and (min-width: 801px) {
+    nav {
+        background-color: #0F5599;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0 3%;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #D8D8D7;
+        text-decoration: none;
+        display: block;
+        padding: 0.9rem 1.8rem;
+    }
+    nav a:hover {
+        color: #E6BE01;
+    }
+    nav li.current a {
+        background-color: #D8D8D7;
+        color: #0F5599;
+    }
+
+}
+
+
+/* -------- Main -------- */
+main {
+    padding: 0.5rem 3%;
+}
+main h1 {
+    color: #620F99;
+    margin: 0;
+    font-size: 2.5rem;
+}
+main h2 {
+    color: #525252;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+main h3 {
+    color: #0F5599;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+main h4 {
+    color: #525252;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+main h3 a {
+    color: #0F5599
+}
+main h2 a {
+    color: #525252;
+    text-decoration: none;
+    text-align: center;
+}
+main a {
+    color: #998000;
+}
+main a:hover {
+    color: #0F5599;
+}
+main dl {
+    border: 1px double #0F5599;
+    padding: 0.1rem 2% 0.2rem 2%;
+}
+main dl dt {
+    color: #620F99;
+    font-weight: 500;
+}
+main dl dd {
+    color: #525252;
+    padding: 0 0 0.5rem 0;
+}
+main p {
+    text-align: center;
+}
+main ul {
+    font-size: 0.9rem;
+    text-align: center;
+    list-style-type: none;
+    margin: 0.5rem 0 2.5rem 0;
+}
+main ul li {
+    line-height: 160%;
+}
+main ol {
+    padding: 0 0 0 12rem;
+    list-style-type: decimal-leading-zero;
+}
+main ol li {
+    line-height: 150%;
+}
+
+figure.profile_pic {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.profile_pic img {
+    width: 100%;
+    height: auto;
+    border: 1px double #0F5599;
+}
+figure.profile_pic figcaption {
+    text-align: center;
+}
+
+div.shop {
+    display: flex;
+    flex-wrap: wrap; /* This wraps to multiple lines */
+}
+div.shop figure {
+    margin: 0.5rem 2% 0 0;
+}
+div.shop figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #620F99;
+}
+.shop img:hover {
+    box-shadow: 1px 1px 10px black;
+}
+
+.commission_form fieldset {
+    border: 3px double #620F99;
+}
+.commission_form legend {
+    color: #620F99;
+    font-size: 0.9rem;
+}
+.commission_form label {
+    margin: 0.5rem;
+    color: #0F5599;
+}
+.commission_form label, .commission_form select, .commission_form [type=text], .commissiom_form [type=email], .commission_form [type=tel], .commission_form textarea {
+    display: block;
+}
+.commission_form [type=text], .commission_form [type=tel], .commissiom_form [type=email], .commission_form select, .commission_form textarea {
+    border: solid 1px #0F5599;
+    padding: 0.5vw;
+    width: 300px;
+    border-radius: 0.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.commission_form textarea {
+    height: 8rem;
+    width: 317px;
+}
+.commission_form :required {
+    background-color: rgba(141, 15, 199, 0.1)
+}
+.commission_form [type=submit] {
+    background-color: #0F5599;
+    font-size: 1.1rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+.thwkhero {
+    margin: 0;
+    width: 100%;
+    border: solid 3px #525252;
+}
+.thwkhero img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.twitch .twitch_video {
+    padding-top: 56.25%;
+    position: relative;
+    height: 0;
+}
+.twitch .twitch_video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.twitch .twitch_chat {
+    height: 400px;
+} 
+.twitch .twitch_chat iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* For Large Screens */
+@media only screen and (min-width: 801px) {
+    .twitch {
+        position: relative;
+    }
+    
+    .twitch .twitch_video {
+        width: 75%;
+        padding-top: 42.1875%;
+    }
+    
+    .twitch .twitch_chat {
+        width: 25%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+div iframe.map {
+    display: block;
+    margin-left: 25%;
+}
+
+table.products {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.products th {
+    text-align: left;
+    color: white;
+    background-color: #0F5599;
+    padding: 0.65rem 2%;
+}
+table.products td {
+    color: #525252;
+    padding: 0.4rem 2%;
+}
+table.products tr:nth-child(odd) {
+    background-color: #0f549913;
+    padding: 0.4rem 2%;
+}
+table.products tr:hover {
+    background-color: #e6c0014d;
+}
+.contact {
+    text-align: left;
+}
+
+/* -------- Footer -------- */
+
+footer {
+    padding: 0.5rem 3%;
+    background-color: #FFE874;
+}
+footer table {
+    width: 100%;
+    margin: 0;
+}
+footer th {
+    padding: 0 1rem;
+    background-color: #FFE874;
+    font-size: 1.5rem;
+    color: #0F5599;
+}
+footer table ul {
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+    list-style-type: none;
+}
+footer table ul li {
+    padding: 0.5rem 0;
+}
+footer table ul li a {
+    padding: 0.91rem .91rem;
+}
+footer table form {
+    font-size: 1rem;
+}
+footer table td {
+    font-size: 1rem;
+}
+footer table ul a {
+    color: #0F5599;
+    text-decoration: none;
+}
+footer p {
+    text-align: center;
+    color: #0F5599;
+}
+footer p a {
+    color: #0F5599;
+}
+
+
+header, nav, main, footer {
+    margin: 0 auto;
+    max-width: 100rem;
+}
+
+.email_list [type=submit] {
+    background-color: #0F5599;
+    font-size: 0.9rem;
+    border: none;
+    padding: 0.7rem 3.5rem;
+    border-radius: 10px;
+    color: white;
+    margin: 0.1rem 0 0 1vw;
+}
